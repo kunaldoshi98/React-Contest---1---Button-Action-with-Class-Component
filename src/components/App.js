@@ -7,20 +7,20 @@ class App extends Component {
     this.state = {
       render: false
     };
-    this.sayHello = this.sayHello.bind(this);
+    this.handleclick = this.handleclick.bind(this);
   }
-  sayHello() {
+  handleclick() {
     this.setState({ render: true });
   }
 
   render() {
     return (
       <div id="main">
-        <button id="click" onClick={this.sayHello}>
+        <button id="click" onClick={this.handleclick}>
           Click
         </button>
         {this.state.render && (
-          <p>
+          <p id="para">
             Hello, I've learnt to use the full-stack evaluation tool. This makes
             me so happy
           </p>
