@@ -10,7 +10,7 @@ class App extends Component {
     this.sayHello = this.sayHello.bind(this);
   }
   sayHello() {
-    this.setState({ render: !this.state.render });
+    this.setState({ render: true });
   }
 
   render() {
