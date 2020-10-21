@@ -6,7 +6,14 @@ class App extends Component {
     super(props);
     this.sayHello = this.sayHello.bind(this);
   }
-  sayHello() {}
+  sayHello() {
+    return (
+      <p>
+        Hello, I've learnt to use the full-stack evaluation tool. This makes me
+        so happy
+      </p>
+    );
+  }
 
   render() {
     return (
@@ -16,10 +23,6 @@ class App extends Component {
             Click
           </button>
         }
-        <p>
-          Hello, I've learnt to use the full-stack evaluation tool. This makes
-          me so happy
-        </p>
       </div>
     );
   }
