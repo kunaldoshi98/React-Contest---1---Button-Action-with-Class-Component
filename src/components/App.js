@@ -4,7 +4,9 @@ import "../styles/App.css";
 class App extends Component {
   constructor(props) {
     super(props);
+    this.sayHello = this.sayHello.bind(this);
   }
+  sayHello() {}
 
   render() {
     return (
