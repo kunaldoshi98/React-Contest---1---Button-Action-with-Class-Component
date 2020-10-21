@@ -4,12 +4,6 @@ import "../styles/App.css";
 class App extends Component {
   constructor(props) {
     super(props);
-    this.sayHello = this.sayHello.bind(this);
-  }
-  sayHello() {
-    alert(
-      "Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy"
-    );
   }
 
   render() {
@@ -20,6 +14,10 @@ class App extends Component {
             Click
           </button>
         }
+        <p>
+          Hello, I've learnt to use the full-stack evaluation tool. This makes
+          me so happy
+        </p>
       </div>
     );
   }
